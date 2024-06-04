@@ -64,10 +64,19 @@
     <Compile Include="Mantenimiento.designer.cs">
       <DependentUpon>Mantenimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Maquinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maquinas.designer.cs">
+      <DependentUpon>Maquinas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Mantenimiento.resx">
       <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maquinas.resx">
+      <DependentUpon>Maquinas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
