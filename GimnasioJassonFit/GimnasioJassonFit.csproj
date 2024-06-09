@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaConsultaAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaConsultaAtencion.designer.cs">
+      <DependentUpon>CapaConsultaAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaConsultaEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaConsultaEntrenador.designer.cs">
+      <DependentUpon>CapaConsultaEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaConsultaMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaConsultaMantenimiento.designer.cs">
+      <DependentUpon>CapaConsultaMantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapaConsultaAtencion.resx">
+      <DependentUpon>CapaConsultaAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaConsultaEntrenador.resx">
+      <DependentUpon>CapaConsultaEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaConsultaMantenimiento.resx">
+      <DependentUpon>CapaConsultaMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
