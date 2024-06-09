@@ -1,6 +1,6 @@
 ﻿namespace GimnasioJassonFit
 {
-    partial class ATENCIÓN_CLIENTE
+    partial class RealizaReforma
     {
         /// <summary>
         /// Required designer variable.
