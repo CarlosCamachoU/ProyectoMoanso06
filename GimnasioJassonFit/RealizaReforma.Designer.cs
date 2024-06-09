@@ -318,7 +318,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RealizaReforma";
-            this.Text = "ATENCIÓN_CLIENTE";
+            this.Text = "RealizaReforma";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
