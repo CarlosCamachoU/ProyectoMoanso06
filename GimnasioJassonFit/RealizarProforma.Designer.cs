@@ -40,13 +40,17 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnAnular = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnBuscarTS = new System.Windows.Forms.Button();
+            this.btnBuscarProf = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +112,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(568, 112);
+            this.label7.Location = new System.Drawing.Point(596, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 16);
             this.label7.TabIndex = 6;
@@ -123,7 +127,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(681, 109);
+            this.textBox3.Location = new System.Drawing.Point(750, 81);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(253, 145);
@@ -145,7 +149,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.btnBuscarCliente);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -158,14 +162,15 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             // 
-            // button5
+            // btnBuscarCliente
             // 
-            this.button5.Location = new System.Drawing.Point(306, 37);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 40);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Location = new System.Drawing.Point(306, 37);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(120, 40);
+            this.btnBuscarCliente.TabIndex = 20;
+            this.btnBuscarCliente.Text = "Buscar";
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // comboBox1
             // 
@@ -192,41 +197,80 @@
             this.dataGridView1.Size = new System.Drawing.Size(948, 192);
             this.dataGridView1.TabIndex = 15;
             // 
-            // button1
+            // btnRegistrar
             // 
-            this.button1.Location = new System.Drawing.Point(179, 529);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "REGISTRAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Location = new System.Drawing.Point(122, 529);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(120, 40);
+            this.btnRegistrar.TabIndex = 16;
+            this.btnRegistrar.Text = "REGISTRAR";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAnular
             // 
-            this.button2.Location = new System.Drawing.Point(495, 529);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 40);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "ANULAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnular.Location = new System.Drawing.Point(364, 529);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(120, 40);
+            this.btnAnular.TabIndex = 17;
+            this.btnAnular.Text = "ANULAR";
+            this.btnAnular.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSalir
             // 
-            this.button4.Location = new System.Drawing.Point(826, 529);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 40);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "SALIR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(826, 529);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(120, 40);
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarTS
+            // 
+            this.btnBuscarTS.Location = new System.Drawing.Point(408, 246);
+            this.btnBuscarTS.Name = "btnBuscarTS";
+            this.btnBuscarTS.Size = new System.Drawing.Size(120, 40);
+            this.btnBuscarTS.TabIndex = 21;
+            this.btnBuscarTS.Text = "Buscar";
+            this.btnBuscarTS.UseVisualStyleBackColor = true;
+            this.btnBuscarTS.Click += new System.EventHandler(this.btnBuscarTS_Click);
+            // 
+            // btnBuscarProf
+            // 
+            this.btnBuscarProf.Location = new System.Drawing.Point(599, 529);
+            this.btnBuscarProf.Name = "btnBuscarProf";
+            this.btnBuscarProf.Size = new System.Drawing.Size(120, 40);
+            this.btnBuscarProf.TabIndex = 22;
+            this.btnBuscarProf.Text = "Buscar";
+            this.btnBuscarProf.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(596, 255);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 16);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "DURACIÓN:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(750, 249);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(168, 22);
+            this.textBox2.TabIndex = 24;
             // 
             // RealizarProforma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 581);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnBuscarProf);
+            this.Controls.Add(this.btnBuscarTS);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnAnular);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
@@ -263,9 +307,13 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnAnular;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.Button btnBuscarTS;
+        private System.Windows.Forms.Button btnBuscarProf;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -16,5 +16,25 @@ namespace GimnasioJassonFit
         {
             InitializeComponent();
         }
+
+        private void btnBuscarCiudad_Click(object sender, EventArgs e)
+        {
+            MantenedorCiudad mc = new MantenedorCiudad();
+            mc.FormClosed += Mc_FormClosed;
+            mc.MdiParent = this.MdiParent;
+            mc.Show();
+
+            this.Hide();
+        }
+
+        private void Mc_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
