@@ -348,6 +348,7 @@
             this.btnBuscarCliente.TabIndex = 18;
             this.btnBuscarCliente.Text = "BUSCAR";
             this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // btnBuscarEntrenador
             // 
@@ -357,6 +358,7 @@
             this.btnBuscarEntrenador.TabIndex = 18;
             this.btnBuscarEntrenador.Text = "BUSCAR";
             this.btnBuscarEntrenador.UseVisualStyleBackColor = true;
+            this.btnBuscarEntrenador.Click += new System.EventHandler(this.btnBuscarEntrenador_Click);
             // 
             // RealizarProgramacionEntrenamientos
             // 
