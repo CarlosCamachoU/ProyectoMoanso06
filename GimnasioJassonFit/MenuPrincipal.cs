@@ -116,13 +116,13 @@ namespace GimnasioJassonFit
 
         private void btnTipoEmpleados_Click(object sender, EventArgs e)
         {
-            Form fmrOpen = Application.OpenForms["TIPOSERVICIO"];
+            Form fmrOpen = Application.OpenForms["TipoEmpleado"];
 
             if (fmrOpen == null)
             {
-                TIPOSERVICIO TPS = new TIPOSERVICIO();
-                TPS.MdiParent = this;
-                TPS.Show();
+                TipoEmpleado TPE = new TipoEmpleado();
+                TPE.MdiParent = this;
+                TPE.Show();
             }
         }
     }

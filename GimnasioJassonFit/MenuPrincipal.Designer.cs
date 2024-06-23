@@ -58,6 +58,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Controls.Add(this.panelEntrenamientos);
