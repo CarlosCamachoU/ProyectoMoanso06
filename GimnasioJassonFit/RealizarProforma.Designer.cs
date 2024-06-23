@@ -51,6 +51,8 @@
             this.btnBuscarProf = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -127,10 +129,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(750, 81);
+            this.textBox3.Location = new System.Drawing.Point(722, 84);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(253, 145);
+            this.textBox3.Size = new System.Drawing.Size(253, 93);
             this.textBox3.TabIndex = 9;
             // 
             // textBox4
@@ -254,16 +256,34 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(750, 249);
+            this.textBox2.Location = new System.Drawing.Point(722, 258);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 22);
+            this.textBox2.Size = new System.Drawing.Size(253, 22);
             this.textBox2.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(596, 210);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 16);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "COTIZACIÓN:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(722, 210);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(253, 22);
+            this.textBox6.TabIndex = 26;
             // 
             // RealizarProforma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 581);
+            this.ClientSize = new System.Drawing.Size(1140, 581);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBuscarProf);
@@ -315,5 +335,7 @@
         private System.Windows.Forms.Button btnBuscarProf;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
