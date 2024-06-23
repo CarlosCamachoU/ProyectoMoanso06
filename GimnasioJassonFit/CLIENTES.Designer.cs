@@ -73,9 +73,12 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarProf = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -395,7 +398,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(708, 104);
+            this.label10.Location = new System.Drawing.Point(8, 25);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 16);
             this.label10.TabIndex = 25;
@@ -403,7 +406,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(805, 101);
+            this.textBox8.Location = new System.Drawing.Point(107, 19);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(185, 22);
@@ -411,7 +414,7 @@
             // 
             // btnAgregarCliente
             // 
-            this.btnAgregarCliente.Location = new System.Drawing.Point(1029, 107);
+            this.btnAgregarCliente.Location = new System.Drawing.Point(1025, 164);
             this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
             this.btnAgregarCliente.Size = new System.Drawing.Size(115, 42);
@@ -421,7 +424,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(1029, 174);
+            this.btnEditar.Location = new System.Drawing.Point(1029, 200);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(115, 42);
@@ -460,13 +463,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.btnAgregarCliente);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -495,11 +497,33 @@
             this.groupBox2.Controls.Add(this.btnBuscarCiudad);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(700, 20);
+            this.groupBox2.Location = new System.Drawing.Point(701, 20);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(454, 65);
+            this.groupBox2.Size = new System.Drawing.Size(443, 61);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
+            // 
+            // btnBuscarProf
+            // 
+            this.btnBuscarProf.Location = new System.Drawing.Point(320, 17);
+            this.btnBuscarProf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuscarProf.Name = "btnBuscarProf";
+            this.btnBuscarProf.Size = new System.Drawing.Size(119, 33);
+            this.btnBuscarProf.TabIndex = 33;
+            this.btnBuscarProf.Text = "BUSCAR";
+            this.btnBuscarProf.UseVisualStyleBackColor = true;
+            this.btnBuscarProf.Click += new System.EventHandler(this.btnBuscarProf_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.btnBuscarProf);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Location = new System.Drawing.Point(701, 87);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(444, 60);
+            this.groupBox3.TabIndex = 34;
+            this.groupBox3.TabStop = false;
             // 
             // CLIENTES
             // 
@@ -521,6 +545,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -572,5 +598,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnBuscarProf;
     }
 }

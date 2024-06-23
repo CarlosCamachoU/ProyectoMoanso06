@@ -17,5 +17,23 @@ namespace GimnasioJassonFit
             InitializeComponent();
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            TipoEmpleado TEM = new TipoEmpleado();
+            TEM.FormClosed += TEM_FormClosed;
+            TEM.MdiParent = this.MdiParent;
+            TEM.Show();
+
+            this.Hide();
+        }
+        private void TEM_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
