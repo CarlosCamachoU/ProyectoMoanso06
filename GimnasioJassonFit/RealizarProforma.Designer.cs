@@ -228,7 +228,7 @@
             // 
             // btnBuscarTS
             // 
-            this.btnBuscarTS.Location = new System.Drawing.Point(408, 246);
+            this.btnBuscarTS.Location = new System.Drawing.Point(424, 246);
             this.btnBuscarTS.Name = "btnBuscarTS";
             this.btnBuscarTS.Size = new System.Drawing.Size(120, 40);
             this.btnBuscarTS.TabIndex = 21;
