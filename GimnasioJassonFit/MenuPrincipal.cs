@@ -42,6 +42,7 @@ namespace GimnasioJassonFit
                 RealizarProforma fmr1 = new RealizarProforma();
                 fmr1.MdiParent = this;
                 fmr1.Show();
+                
             }
 
         }

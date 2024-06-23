@@ -101,8 +101,20 @@
     <Compile Include="MantenedorCiudad.Designer.cs">
       <DependentUpon>MantenedorCiudad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Profesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesion.Designer.cs">
+      <DependentUpon>Profesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoEmpleado.Designer.cs">
+      <DependentUpon>TipoEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="TIPOSERVICIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,9 @@
     <EmbeddedResource Include="MantenedorCiudad.resx">
       <DependentUpon>MantenedorCiudad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Profesion.resx">
+      <DependentUpon>Profesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -153,12 +168,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RealizarProforma.resx">
       <DependentUpon>RealizarProforma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RealizarProgramacionEntrenamientos.resx">
       <DependentUpon>RealizarProgramacionEntrenamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoEmpleado.resx">
+      <DependentUpon>TipoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TIPOSERVICIO.resx">
       <DependentUpon>TIPOSERVICIO.cs</DependentUpon>
@@ -186,6 +205,12 @@
       <Project>{56fd4644-12d5-4a01-93f8-db10b8e24721}</Project>
       <Name>Capa Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo cliente1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
