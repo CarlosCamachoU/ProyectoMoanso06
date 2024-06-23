@@ -48,15 +48,19 @@ namespace GimnasioJassonFit
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 253);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 225);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(537, 173);
+            this.dataGridView1.Size = new System.Drawing.Size(537, 122);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -96,7 +100,7 @@ namespace GimnasioJassonFit
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 176);
+            this.label4.Location = new System.Drawing.Point(328, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 5;
@@ -118,14 +122,14 @@ namespace GimnasioJassonFit
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(137, 173);
+            this.textBox4.Location = new System.Drawing.Point(383, 25);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(172, 20);
             this.textBox4.TabIndex = 8;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 208);
+            this.button1.Location = new System.Drawing.Point(18, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 27);
             this.button1.TabIndex = 9;
@@ -134,7 +138,7 @@ namespace GimnasioJassonFit
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(125, 208);
+            this.button2.Location = new System.Drawing.Point(168, 192);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 27);
             this.button2.TabIndex = 10;
@@ -143,7 +147,7 @@ namespace GimnasioJassonFit
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(349, 208);
+            this.button3.Location = new System.Drawing.Point(457, 192);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 27);
             this.button3.TabIndex = 11;
@@ -152,7 +156,7 @@ namespace GimnasioJassonFit
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(470, 208);
+            this.button4.Location = new System.Drawing.Point(536, 353);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(85, 27);
             this.button4.TabIndex = 12;
@@ -161,16 +165,16 @@ namespace GimnasioJassonFit
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(403, 71);
+            this.button5.Location = new System.Drawing.Point(71, 52);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 38);
+            this.button5.Size = new System.Drawing.Size(84, 27);
             this.button5.TabIndex = 13;
-            this.button5.Text = "Buscar TipoEmpleado";
+            this.button5.Text = "Buscar ";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(242, 208);
+            this.button6.Location = new System.Drawing.Point(315, 192);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(85, 27);
             this.button6.TabIndex = 14;
@@ -196,7 +200,7 @@ namespace GimnasioJassonFit
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(288, 29);
+            this.label6.Location = new System.Drawing.Point(6, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 13);
             this.label6.TabIndex = 17;
@@ -205,22 +209,51 @@ namespace GimnasioJassonFit
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(394, 25);
+            this.comboBox1.Location = new System.Drawing.Point(90, 25);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 18;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Location = new System.Drawing.Point(331, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(224, 91);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(385, 145);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(328, 145);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Estado";
             // 
             // MantenedorEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 450);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(630, 381);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -237,6 +270,8 @@ namespace GimnasioJassonFit
             this.Name = "MantenedorEmpleado";
             this.Text = "MantenedorEmpleado";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +298,8 @@ namespace GimnasioJassonFit
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

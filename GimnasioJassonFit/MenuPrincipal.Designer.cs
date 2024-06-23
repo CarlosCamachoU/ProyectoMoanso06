@@ -43,9 +43,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnRegistrarEE = new System.Windows.Forms.Button();
+            this.btnTipoEmpleado = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelEntrenamientos.SuspendLayout();
             this.panelReforma.SuspendLayout();
@@ -229,9 +229,9 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnEmpleados);
+            this.panel2.Controls.Add(this.btnRegistrarEE);
+            this.panel2.Controls.Add(this.btnTipoEmpleado);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 459);
             this.panel2.Name = "panel2";
@@ -240,47 +240,47 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(0, 105);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
-            this.button1.Size = new System.Drawing.Size(237, 49);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "ENTRENADORES";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.ForeColor = System.Drawing.Color.LightGray;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 105);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
+            this.btnEmpleados.Size = new System.Drawing.Size(237, 49);
+            this.btnEmpleados.TabIndex = 6;
+            this.btnEmpleados.Text = "EMPLEADOS";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 56);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
-            this.button2.Size = new System.Drawing.Size(237, 49);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "PROGRAMACION ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRegistrarEE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnRegistrarEE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistrarEE.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarEE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarEE.ForeColor = System.Drawing.Color.LightGray;
+            this.btnRegistrarEE.Location = new System.Drawing.Point(0, 56);
+            this.btnRegistrarEE.Name = "btnRegistrarEmpleado";
+            this.btnRegistrarEE.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
+            this.btnRegistrarEE.Size = new System.Drawing.Size(237, 49);
+            this.btnRegistrarEE.TabIndex = 5;
+            this.btnRegistrarEE.Text = "REGISTRAR EMPLEADO";
+            this.btnRegistrarEE.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 56);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "ENTRENAMIENTOS";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnTipoEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.btnTipoEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTipoEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTipoEmpleado.ForeColor = System.Drawing.Color.LightGray;
+            this.btnTipoEmpleado.Location = new System.Drawing.Point(0, 0);
+            this.btnTipoEmpleado.Name = "btnTipoEmpleado";
+            this.btnTipoEmpleado.Size = new System.Drawing.Size(237, 56);
+            this.btnTipoEmpleado.TabIndex = 4;
+            this.btnTipoEmpleado.Text = "TIPO EMPLEADO";
+            this.btnTipoEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTipoEmpleado.UseVisualStyleBackColor = false;
             // 
             // MenuPrincipal
             // 
