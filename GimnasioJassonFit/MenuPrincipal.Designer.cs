@@ -39,21 +39,27 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnRegistraReforma = new System.Windows.Forms.Button();
             this.panelLogoGim = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTipoEmpleado = new System.Windows.Forms.Button();
+            this.btnRegistrarEE = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelEntrenamientos.SuspendLayout();
             this.panelReforma.SuspendLayout();
             this.panelLogoGim.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Controls.Add(this.panelEntrenamientos);
             this.panelMenu.Controls.Add(this.panelReforma);
             this.panelMenu.Controls.Add(this.panelLogoGim);
@@ -71,7 +77,7 @@
             this.panelEntrenamientos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEntrenamientos.Location = new System.Drawing.Point(0, 304);
             this.panelEntrenamientos.Name = "panelEntrenamientos";
-            this.panelEntrenamientos.Size = new System.Drawing.Size(237, 173);
+            this.panelEntrenamientos.Size = new System.Drawing.Size(237, 155);
             this.panelEntrenamientos.TabIndex = 3;
             // 
             // btnEntrenadores
@@ -189,16 +195,6 @@
             this.panelLogoGim.Size = new System.Drawing.Size(237, 158);
             this.panelLogoGim.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(237, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1173, 158);
-            this.panel1.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -209,6 +205,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(237, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1173, 158);
+            this.panel1.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -221,9 +227,66 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnTipoEmpleado);
+            this.panel2.Controls.Add(this.btnRegistrarEE);
+            this.panel2.Controls.Add(this.btnEmpleados);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 459);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(237, 173);
+            this.panel2.TabIndex = 4;
+            // 
+            // btnTipoEmpleado
+            // 
+            this.btnTipoEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnTipoEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTipoEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnTipoEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTipoEmpleado.ForeColor = System.Drawing.Color.LightGray;
+            this.btnTipoEmpleado.Location = new System.Drawing.Point(0, 105);
+            this.btnTipoEmpleado.Name = "btnTipoEmpleado";
+            this.btnTipoEmpleado.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
+            this.btnTipoEmpleado.Size = new System.Drawing.Size(237, 49);
+            this.btnTipoEmpleado.TabIndex = 6;
+            this.btnTipoEmpleado.Text = "TIPO EMPLEADO";
+            this.btnTipoEmpleado.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistrarEE
+            // 
+            this.btnRegistrarEE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnRegistrarEE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegistrarEE.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarEE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarEE.ForeColor = System.Drawing.Color.LightGray;
+            this.btnRegistrarEE.Location = new System.Drawing.Point(0, 56);
+            this.btnRegistrarEE.Name = "btnRegistrarEE";
+            this.btnRegistrarEE.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
+            this.btnRegistrarEE.Size = new System.Drawing.Size(237, 49);
+            this.btnRegistrarEE.TabIndex = 5;
+            this.btnRegistrarEE.Text = "REGISTRAR EMPLEADO";
+            this.btnRegistrarEE.UseVisualStyleBackColor = false;
+            this.btnRegistrarEE.Click += new System.EventHandler(this.btnRegistrarEE_Click);
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.ForeColor = System.Drawing.Color.LightGray;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 0);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(237, 56);
+            this.btnEmpleados.TabIndex = 4;
+            this.btnEmpleados.Text = "EMPLEADOS";
+            this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1410, 844);
             this.Controls.Add(this.panel1);
@@ -233,13 +296,15 @@
             this.Name = "MenuPrincipal";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelEntrenamientos.ResumeLayout(false);
             this.panelReforma.ResumeLayout(false);
             this.panelLogoGim.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -259,6 +324,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnTipoEmpleado;
+        private System.Windows.Forms.Button btnRegistrarEE;
+        private System.Windows.Forms.Button btnEmpleados;
     }
 }
 
