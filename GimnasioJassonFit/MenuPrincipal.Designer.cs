@@ -284,7 +284,7 @@
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1410, 844);
             this.Controls.Add(this.panel1);
@@ -294,6 +294,7 @@
             this.Name = "MenuPrincipal";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelEntrenamientos.ResumeLayout(false);
             this.panelReforma.ResumeLayout(false);
@@ -322,9 +323,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnTipoEmpleado;
+        private System.Windows.Forms.Button btnRegistrarEE;
+        private System.Windows.Forms.Button btnEmpleados;
     }
 }
 

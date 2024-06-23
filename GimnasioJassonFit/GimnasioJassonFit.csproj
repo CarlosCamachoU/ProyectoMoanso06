@@ -89,6 +89,12 @@
     <Compile Include="Especialidad.Designer.cs">
       <DependentUpon>Especialidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorEmpleado.Designer.cs">
+      <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Especialidad.resx">
       <DependentUpon>Especialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorEmpleado.resx">
+      <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
