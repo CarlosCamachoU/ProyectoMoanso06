@@ -44,10 +44,10 @@ namespace GimnasioJassonFit
 
         private void btnBuscarSala_Click(object sender, EventArgs e)
         {
-            MantenedorCiudad bs = new MantenedorCiudad();
-            bs.FormClosed += BuSal_FormClosed;
-            bs.MdiParent = this.MdiParent;
-            bs.Show();
+            Form2 sl = new Form2();
+            sl.FormClosed += BuSal_FormClosed;
+            sl.MdiParent = this.MdiParent;
+            sl.Show();
 
             this.Hide();
         }
