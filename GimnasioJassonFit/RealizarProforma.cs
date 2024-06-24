@@ -44,5 +44,20 @@ namespace GimnasioJassonFit
         {
             this.Show();
         }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            MantenedorEmpleado MEm = new MantenedorEmpleado();
+            MEm.FormClosed += MEm_FormClosed;
+            MEm.MdiParent = this.MdiParent;
+            MEm.Show();
+
+            this.Hide();
+        }
+
+        private void MEm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
     }
 }
