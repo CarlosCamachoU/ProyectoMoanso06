@@ -54,6 +54,7 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -62,15 +63,24 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.btnBuscarEntrenador = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnBuscarEmpleado = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 82);
+            this.label1.Location = new System.Drawing.Point(43, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 16);
             this.label1.TabIndex = 0;
@@ -97,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 342);
+            this.label4.Location = new System.Drawing.Point(18, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 16);
             this.label4.TabIndex = 3;
@@ -114,7 +124,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(268, 79);
+            this.textBox1.Location = new System.Drawing.Point(254, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 22);
             this.textBox1.TabIndex = 5;
@@ -143,7 +153,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(268, 339);
+            this.comboBox1.Location = new System.Drawing.Point(229, 17);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(154, 24);
             this.comboBox1.TabIndex = 9;
@@ -225,7 +235,8 @@
             this.Column11,
             this.Column12,
             this.Column14,
-            this.Column13});
+            this.Column13,
+            this.Column15});
             this.dataGridView2.Location = new System.Drawing.Point(241, 446);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -273,7 +284,7 @@
             this.Column14.HeaderText = "FECHA_REGISTRO";
             this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
-            this.Column14.Width = 125;
+            this.Column14.Width = 145;
             // 
             // Column13
             // 
@@ -281,6 +292,13 @@
             this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
             this.Column13.Width = 125;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "SALA";
+            this.Column15.MinimumWidth = 6;
+            this.Column15.Name = "Column15";
+            this.Column15.Width = 125;
             // 
             // btnRegistrar
             // 
@@ -302,12 +320,13 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1024, 364);
+            this.btnSalir.Location = new System.Drawing.Point(1246, 364);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(146, 52);
             this.btnSalir.TabIndex = 14;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label6
             // 
@@ -334,15 +353,15 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(48, 122);
+            this.groupBox1.Location = new System.Drawing.Point(46, 80);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 200);
+            this.groupBox1.Size = new System.Drawing.Size(396, 170);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
             // btnBuscarCliente
             // 
-            this.btnBuscarCliente.Location = new System.Drawing.Point(101, 136);
+            this.btnBuscarCliente.Location = new System.Drawing.Point(101, 123);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(146, 40);
             this.btnBuscarCliente.TabIndex = 18;
@@ -352,19 +371,86 @@
             // 
             // btnBuscarEntrenador
             // 
-            this.btnBuscarEntrenador.Location = new System.Drawing.Point(149, 382);
+            this.btnBuscarEntrenador.Location = new System.Drawing.Point(1028, 364);
             this.btnBuscarEntrenador.Name = "btnBuscarEntrenador";
-            this.btnBuscarEntrenador.Size = new System.Drawing.Size(146, 39);
+            this.btnBuscarEntrenador.Size = new System.Drawing.Size(142, 51);
             this.btnBuscarEntrenador.TabIndex = 18;
             this.btnBuscarEntrenador.Text = "BUSCAR";
             this.btnBuscarEntrenador.UseVisualStyleBackColor = true;
             this.btnBuscarEntrenador.Click += new System.EventHandler(this.btnBuscarEntrenador_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 60);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(158, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "SALA DE ACTIVIDADES:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(229, 57);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(154, 22);
+            this.textBox5.TabIndex = 20;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Location = new System.Drawing.Point(39, 322);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(404, 93);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 16);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "EMPLEADO:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(96, 24);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(154, 22);
+            this.textBox6.TabIndex = 23;
+            // 
+            // btnBuscarEmpleado
+            // 
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(256, 15);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(127, 40);
+            this.btnBuscarEmpleado.TabIndex = 24;
+            this.btnBuscarEmpleado.Text = "BUSCAR";
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = true;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnBuscarEmpleado);
+            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Location = new System.Drawing.Point(45, 255);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(398, 67);
+            this.groupBox3.TabIndex = 25;
+            this.groupBox3.TabStop = false;
             // 
             // RealizarProgramacionEntrenamientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1416, 708);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnBuscarEntrenador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -374,9 +460,7 @@
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "RealizarProgramacionEntrenamientos";
             this.Text = "RealizarProgramacionEntrenamientos";
@@ -384,6 +468,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,6 +503,11 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.Button btnBuscarEntrenador;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
@@ -422,8 +515,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnBuscarCliente;
-        private System.Windows.Forms.Button btnBuscarEntrenador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnBuscarEmpleado;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

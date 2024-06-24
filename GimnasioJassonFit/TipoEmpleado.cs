@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GimnasioJassonFit
 {
-    public partial class Especialidad : Form
+    public partial class TipoEmpleado : Form
     {
-        public Especialidad()
+        public TipoEmpleado()
         {
             InitializeComponent();
         }

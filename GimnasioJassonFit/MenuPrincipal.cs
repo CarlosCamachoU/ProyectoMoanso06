@@ -25,6 +25,9 @@ namespace GimnasioJassonFit
             btnCliente.Visible = false;
             btnProEntrenamientos.Visible = false;
             btnEntrenadores.Visible = false;
+            btnRegistrarEE.Visible = false;
+            btnTipoEmpleados.Visible = false;
+
         }
         
         private void btnRegistraReforma_Click(object sender, EventArgs e)
@@ -42,6 +45,7 @@ namespace GimnasioJassonFit
                 RealizarProforma fmr1 = new RealizarProforma();
                 fmr1.MdiParent = this;
                 fmr1.Show();
+                
             }
 
         }
@@ -88,5 +92,38 @@ namespace GimnasioJassonFit
             }
         }
 
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            btnRegistrarEE.Visible = !btnRegistrarEE.Visible;
+            btnTipoEmpleados.Visible = !btnTipoEmpleados.Visible;
+        }
+
+        private void btnRegistrarEE_Click_1(object sender, EventArgs e)
+        {
+            Form fmrOpen = Application.OpenForms["MantenedorEmpleado"];
+
+            if (fmrOpen == null)
+            {
+                MantenedorEmpleado fmRE = new MantenedorEmpleado();
+                fmRE.MdiParent = this;
+                fmRE.Show();
+            }
+        }
+
+        private void btnTipoEmpleados_Click(object sender, EventArgs e)
+        {
+            Form fmrOpen = Application.OpenForms["TipoEmpleado"];
+
+            if (fmrOpen == null)
+            {
+                TipoEmpleado TPE = new TipoEmpleado();
+                TPE.MdiParent = this;
+                TPE.Show();
+            }
+        }
     }
 }

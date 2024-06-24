@@ -36,5 +36,19 @@ namespace GimnasioJassonFit
         {
             this.Close();
         }
+
+        private void btnBuscarProf_Click(object sender, EventArgs e)
+        {
+            Profesion pf = new Profesion();
+            pf.FormClosed += PF_FormClosed;
+            pf.MdiParent = this.MdiParent;
+            pf.Show();
+
+            this.Hide();
+        }
+        private void PF_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
     }
 }

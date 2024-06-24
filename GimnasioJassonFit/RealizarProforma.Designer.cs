@@ -53,6 +53,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnBuscarEmpleado = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 109);
+            this.label2.Location = new System.Drawing.Point(30, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 1;
@@ -114,7 +117,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(596, 84);
+            this.label7.Location = new System.Drawing.Point(637, 81);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 16);
             this.label7.TabIndex = 6;
@@ -129,7 +132,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(722, 84);
+            this.textBox3.Location = new System.Drawing.Point(763, 81);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(253, 93);
@@ -158,7 +161,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(102, 97);
+            this.groupBox1.Location = new System.Drawing.Point(102, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(442, 129);
             this.groupBox1.TabIndex = 12;
@@ -228,7 +231,7 @@
             // 
             // btnBuscarTS
             // 
-            this.btnBuscarTS.Location = new System.Drawing.Point(408, 246);
+            this.btnBuscarTS.Location = new System.Drawing.Point(424, 250);
             this.btnBuscarTS.Name = "btnBuscarTS";
             this.btnBuscarTS.Size = new System.Drawing.Size(120, 40);
             this.btnBuscarTS.TabIndex = 21;
@@ -277,11 +280,41 @@
             this.textBox6.Size = new System.Drawing.Size(253, 22);
             this.textBox6.TabIndex = 26;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(212, 213);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(168, 24);
+            this.comboBox2.TabIndex = 28;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 216);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 16);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "EMPLEADO:";
+            // 
+            // btnBuscarEmpleado
+            // 
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(424, 204);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(120, 40);
+            this.btnBuscarEmpleado.TabIndex = 29;
+            this.btnBuscarEmpleado.Text = "Buscar";
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = true;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
+            // 
             // RealizarProforma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 581);
+            this.Controls.Add(this.btnBuscarEmpleado);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox2);
@@ -337,5 +370,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnBuscarEmpleado;
     }
 }
