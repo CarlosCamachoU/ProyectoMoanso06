@@ -59,7 +59,7 @@ namespace GimnasioJassonFit
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(24, 277);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(716, 150);
@@ -78,7 +78,7 @@ namespace GimnasioJassonFit
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(183, 32);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 2;
@@ -116,7 +116,7 @@ namespace GimnasioJassonFit
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(183, 124);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 6;
@@ -124,7 +124,7 @@ namespace GimnasioJassonFit
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(183, 170);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 7;
@@ -132,7 +132,7 @@ namespace GimnasioJassonFit
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(511, 31);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(228, 22);
             this.textBox4.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace GimnasioJassonFit
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(24, 236);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 33);
             this.button1.TabIndex = 9;
@@ -150,7 +150,7 @@ namespace GimnasioJassonFit
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(224, 236);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 33);
             this.button2.TabIndex = 10;
@@ -160,7 +160,7 @@ namespace GimnasioJassonFit
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(609, 236);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 33);
             this.button3.TabIndex = 11;
@@ -170,7 +170,7 @@ namespace GimnasioJassonFit
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(715, 434);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(113, 33);
             this.btnSalir.TabIndex = 12;
@@ -181,7 +181,7 @@ namespace GimnasioJassonFit
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(95, 64);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 33);
             this.btnBuscar.TabIndex = 13;
@@ -192,7 +192,7 @@ namespace GimnasioJassonFit
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(420, 236);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(113, 33);
             this.button6.TabIndex = 14;
@@ -202,7 +202,7 @@ namespace GimnasioJassonFit
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(183, 79);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 22);
             this.textBox5.TabIndex = 15;
@@ -231,7 +231,7 @@ namespace GimnasioJassonFit
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(120, 31);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 18;
@@ -242,9 +242,9 @@ namespace GimnasioJassonFit
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Location = new System.Drawing.Point(441, 63);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(299, 112);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
@@ -253,7 +253,7 @@ namespace GimnasioJassonFit
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(513, 178);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 20;
@@ -293,7 +293,7 @@ namespace GimnasioJassonFit
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MantenedorEmpleado";
             this.Text = "MantenedorEmpleado";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
