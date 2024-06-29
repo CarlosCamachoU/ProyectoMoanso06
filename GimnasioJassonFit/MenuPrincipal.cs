@@ -56,7 +56,7 @@ namespace GimnasioJassonFit
 
             if (fmrOpen == null)
             {
-                CLIENTES fmr2 = new CLIENTES();
+                dgvClientes fmr2 = new dgvClientes();
                 fmr2.MdiParent = this;
                 fmr2.Show();
             }

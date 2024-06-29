@@ -19,7 +19,7 @@ namespace GimnasioJassonFit
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
-            CLIENTES Cl = new CLIENTES();
+            dgvClientes Cl = new dgvClientes();
             Cl.FormClosed += Cl_FormClosed;
             Cl.MdiParent = this.MdiParent;
             Cl.Show();

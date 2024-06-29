@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Capa_Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,15 +7,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Capa_Entidad;
 using System.Windows.Forms;
 
 namespace GimnasioJassonFit
 {
-    public partial class CLIENTES : Form
+    public partial class dgvClientes : Form
     {
-        public CLIENTES()
+        public dgvClientes()
         {
             InitializeComponent();
+            listarCliente();
         }
 
         private void btnBuscarCiudad_Click(object sender, EventArgs e)
@@ -50,5 +53,10 @@ namespace GimnasioJassonFit
         {
             this.Show();
         }
+        public void listarCliente()
+        {
+            dgvCliente.DataSource = logCliente.Instancia.ListarCliente();
+        }
+
     }
 }
