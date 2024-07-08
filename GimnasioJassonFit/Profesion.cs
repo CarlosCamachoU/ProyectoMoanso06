@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Capa_Entidad;
+using Capa_Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +17,108 @@ namespace GimnasioJassonFit
         public Profesion()
         {
             InitializeComponent();
+            listarProfesion();
+            txtProfesion.Enabled = false;
+            txtDescripcion.Enabled = false;
+            txtIDProfesion.Enabled = false;
         }
-
+        private void LimpiarVariables()
+        {
+            txtProfesion.Text = "";
+            txtDescripcion.Text = "";
+        }
+        public void listarProfesion()
+        {
+            dgvProfesion.DataSource = logProfesion.Instancia.ListarProfesion();
+        }
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtProfesion.Enabled = true;
+            txtDescripcion.Enabled = true;
+            btnRegistrar.Visible = true;
+            LimpiarVariables();
+            btnModificar.Visible = false;
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProfesion Pr = new entProfesion();
+                Pr.NombreProfe = txtProfesion.Text.Trim();
+                Pr.DescripcionProfe = txtDescripcion.Text.Trim();
+                logProfesion.Instancia.InsertarProfesion(Pr);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.. no se puede registrar correctamente" + ex);
+            }
+            LimpiarVariables();
+            txtProfesion.Enabled = false;
+            txtDescripcion.Enabled = false;
+            listarProfesion();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProfesion Pr = new entProfesion();
+                Pr.ProfesionID = int.Parse(txtIDProfesion.Text.ToString());
+                Pr.NombreProfe = txtProfesion.Text.ToString();
+                Pr.DescripcionProfe = txtProfesion.Text.ToString();
+                logProfesion.Instancia.ModificarProfesion(Pr);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.. no se puede modificar correctamente" + ex);
+            }
+            LimpiarVariables();
+            txtProfesion.Enabled = false;
+            txtDescripcion.Enabled = false;
+            txtIDProfesion.Enabled = false;
+            listarProfesion();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProfesion Pr = new entProfesion();
+                Pr.ProfesionID = int.Parse(txtIDProfesion.Text.ToString());
+                Pr.NombreProfe = txtProfesion.Text.ToString();
+                Pr.DescripcionProfe = txtDescripcion.Text.ToString();
+                logProfesion.Instancia.EliminarProfesion(Pr);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            txtProfesion.Enabled = false;
+            txtDescripcion.Enabled = false;
+            listarProfesion();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            txtProfesion.Enabled = true;
+            txtDescripcion.Enabled = true;
+            btnModificar.Visible = true;
+            btnRegistrar.Visible = false;
+        }
+
+        private void dgvProfesion_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvProfesion.Rows[e.RowIndex]; 
+            txtIDProfesion.Text = filaActual.Cells[0].Value.ToString();
+            txtProfesion.Text = filaActual.Cells[1].Value.ToString();
+            txtDescripcion.Text = filaActual.Cells[2].Value.ToString();
         }
     }
 }
