@@ -92,6 +92,18 @@
     <Compile Include="Especialidad.Designer.cs">
       <DependentUpon>Especialidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="HorarioEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorarioEntrenador.Designer.cs">
+      <DependentUpon>HorarioEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgresoEntrenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgresoEntrenamiento.Designer.cs">
+      <DependentUpon>ProgresoEntrenamiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     <Compile Include="TipoEmpleado.Designer.cs">
       <DependentUpon>TipoEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoEntrenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoEntrenamiento.Designer.cs">
+      <DependentUpon>TipoEntrenamiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="TIPOSERVICIO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,8 +184,14 @@
     <EmbeddedResource Include="Especialidad.resx">
       <DependentUpon>Especialidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HorarioEntrenador.resx">
+      <DependentUpon>HorarioEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorEmpleado.resx">
       <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgresoEntrenamiento.resx">
+      <DependentUpon>ProgresoEntrenamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sala.resx">
       <DependentUpon>Sala.cs</DependentUpon>
@@ -199,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TipoEmpleado.resx">
       <DependentUpon>TipoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoEntrenamiento.resx">
+      <DependentUpon>TipoEntrenamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TIPOSERVICIO.resx">
       <DependentUpon>TIPOSERVICIO.cs</DependentUpon>
