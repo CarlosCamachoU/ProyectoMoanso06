@@ -136,7 +136,7 @@
             // 
             // cmbEstado
             // 
-            this.cmbEstado.BackColor = System.Drawing.Color.Firebrick;
+            this.cmbEstado.BackColor = System.Drawing.Color.Gainsboro;
             this.cmbEstado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(277, 149);
@@ -157,7 +157,7 @@
             // 
             // txtUbicacion
             // 
-            this.txtUbicacion.BackColor = System.Drawing.Color.Firebrick;
+            this.txtUbicacion.BackColor = System.Drawing.Color.Gainsboro;
             this.txtUbicacion.Location = new System.Drawing.Point(572, 106);
             this.txtUbicacion.Name = "txtUbicacion";
             this.txtUbicacion.Size = new System.Drawing.Size(211, 20);
@@ -187,7 +187,7 @@
             // 
             // txtSala
             // 
-            this.txtSala.BackColor = System.Drawing.Color.Firebrick;
+            this.txtSala.BackColor = System.Drawing.Color.Gainsboro;
             this.txtSala.Location = new System.Drawing.Point(572, 65);
             this.txtSala.Name = "txtSala";
             this.txtSala.Size = new System.Drawing.Size(211, 20);
@@ -195,7 +195,7 @@
             // 
             // txtCodSala
             // 
-            this.txtCodSala.BackColor = System.Drawing.Color.Firebrick;
+            this.txtCodSala.BackColor = System.Drawing.Color.Gainsboro;
             this.txtCodSala.Location = new System.Drawing.Point(277, 71);
             this.txtCodSala.Name = "txtCodSala";
             this.txtCodSala.Size = new System.Drawing.Size(127, 20);
@@ -314,7 +314,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Firebrick;
+            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox2.Location = new System.Drawing.Point(100, 220);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(360, 20);
@@ -395,7 +395,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Firebrick;
+            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox3.Location = new System.Drawing.Point(277, 109);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(127, 20);
@@ -414,7 +414,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Firebrick;
+            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox1.Location = new System.Drawing.Point(572, 149);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -425,7 +425,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(786, 472);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
