@@ -127,24 +127,6 @@ namespace Capa_Datos
                 {
                     eliminar = true;
                 }
-                /*
-                // Reorganizar los IDs
-                string reorganizarQuery = @"
-                    DECLARE @CurrentID INT, @SiguienteID INT
-                    SET @CurrentID = @ProfesionID
-
-                    WHILE EXISTS (SELECT 1 FROM Profesion WHERE ProfesionID > @CurrentID)
-                    BEGIN
-                        SET @SiguienteID = (SELECT MIN(ProfesionID) FROM Profesion WHERE ProfesionID > @CurrentID)
-                        UPDATE Profesion SET ProfesionID = @CurrentID WHERE ProfesionID = @SiguienteID
-                        SET @CurrentID = @CurrentID + 1
-                    END";
-
-                using (SqlCommand updateCommand = new SqlCommand(reorganizarQuery, cn))
-                {
-                    updateCommand.Parameters.AddWithValue("@ProfesionID", Pr.ProfesionID);
-                    updateCommand.ExecuteNonQuery();
-                }*/
             }
             catch (Exception e)
             {
@@ -153,6 +135,8 @@ namespace Capa_Datos
             finally { cmd.Connection.Close(); }
             return eliminar;
         }
+        
+
         #endregion metodos
 
     }

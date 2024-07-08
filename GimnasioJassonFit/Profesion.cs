@@ -87,7 +87,7 @@ namespace GimnasioJassonFit
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 entProfesion Pr = new entProfesion();
                 Pr.ProfesionID = int.Parse(txtIDProfesion.Text.ToString());
@@ -102,7 +102,37 @@ namespace GimnasioJassonFit
             LimpiarVariables();
             txtProfesion.Enabled = false;
             txtDescripcion.Enabled = false;
-            listarProfesion();
+            listarProfesion();*/
+            if (dgvProfesion.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    DataGridViewRow selectedRow = dgvProfesion.SelectedRows[0];
+                    int profesionID = Convert.ToInt32(selectedRow.Cells["ProfesionID"].Value);
+
+                    //var confirmResult = MessageBox.Show("¿Estás seguro de eliminar esta profesión?",
+                       // "Confirmar Eliminación",
+                       // MessageBoxButtons.YesNo);
+                   // if (confirmResult == DialogResult.Yes)
+                    //{
+                        entProfesion Pr = new entProfesion { ProfesionID = profesionID };
+                        logProfesion.Instancia.EliminarProfesion(Pr);
+
+                        dgvProfesion.Rows.Remove(selectedRow);
+                        MessageBox.Show("Profesión eliminada correctamente.");
+                   // }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error.. no se puede eliminar correctamente" + ex.Message);
+                }
+                LimpiarVariables();
+                listarProfesion();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona una fila para eliminar.");
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
