@@ -20,6 +20,7 @@ namespace GimnasioJassonFit
             listarCiudad();
             txtCiudad.Enabled = false;
             txtCiudadID.Enabled = false;
+
             
         }
         private void LimpiarVariables()
