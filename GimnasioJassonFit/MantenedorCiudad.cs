@@ -55,13 +55,16 @@ namespace GimnasioJassonFit
             listarCiudad();
         }
 
+
+
         private void btnModificar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 entCiudad ci = new entCiudad();
-                ci.CiudadID = int.Parse(txtCiudadID.Text.Trim());
-                ci.NombreCiudad = txtCiudad.Text.Trim();
+                ci.CiudadID = int.Parse(txtCiudadID.Text.ToString());
+                ci.NombreCiudad = txtCiudad.Text.ToString();
                 ci.EstadoCiudad = cbEstadoCiu.Checked;
                 logCiudad.Instancia.ModificarCiudad(ci);
             }
@@ -80,8 +83,8 @@ namespace GimnasioJassonFit
             try
             {
                 entCiudad ci = new entCiudad();
-                ci.NombreCiudad = txtCiudad.Text.Trim();
-                ci.CiudadID = int.Parse(Text.Trim());
+                ci.NombreCiudad = txtCiudad.Text.ToString();
+                ci.CiudadID = int.Parse(txtCiudadID.Text.ToString());
                 cbEstadoCiu.Checked = false;
                 ci.EstadoCiudad = cbEstadoCiu.Checked;
                 logCiudad.Instancia.DeshabilitarCiudad(ci);
@@ -109,6 +112,14 @@ namespace GimnasioJassonFit
             txtCiudad.Enabled = true;
             btnModificar.Visible = true;
             btnRegistrar.Visible = false;
+        }
+
+        private void dgvCiudad_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvCiudad.Rows[e.RowIndex]; //
+            txtCiudadID.Text = filaActual.Cells[0].Value.ToString();
+            txtCiudad.Text = filaActual.Cells[1].Value.ToString();
+            cbEstadoCiu.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
         }
     }
 }

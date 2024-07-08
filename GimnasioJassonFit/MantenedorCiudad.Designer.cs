@@ -119,6 +119,7 @@
             this.dgvCiudad.RowTemplate.Height = 24;
             this.dgvCiudad.Size = new System.Drawing.Size(519, 149);
             this.dgvCiudad.TabIndex = 7;
+            this.dgvCiudad.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCiudad_CellDoubleClick);
             // 
             // label2
             // 
@@ -194,7 +195,7 @@
             this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.label1);
             this.Name = "MantenedorCiudad";
-            this.Text = "Z";
+            this.Text = "Ciudad";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCiudad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

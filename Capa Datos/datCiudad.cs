@@ -123,10 +123,10 @@ namespace Capa_Datos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDesabilitarCiudad", cn);
+                cmd = new SqlCommand("spDeshabilitarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CiudadID", Ciu.CiudadID);
-                cmd.Parameters.AddWithValue("@estCiudad", Ciu.EstadoCiudad);
+                //cmd.Parameters.AddWithValue("@estCiudad", Ciu.EstadoCiudad);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
