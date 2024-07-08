@@ -13,10 +13,9 @@ namespace Capa_Datos
     public class datCiudad
     {
         #region sigleton
-        //Patron Singleton
-        // Variable estática para la instancia
+
         private static readonly datCiudad _instancia = new datCiudad();
-        //privado para evitar la instanciación directa
+
         public static datCiudad Instancia
         {
             get
@@ -34,7 +33,7 @@ namespace Capa_Datos
             List<entCiudad> lista = new List<entCiudad>();
             try
             {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                SqlConnection cn = Conexion.Instancia.Conectar(); 
                 cmd = new SqlCommand("spListarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
@@ -59,7 +58,7 @@ namespace Capa_Datos
             return lista;
         }
 
-        /////////////////////////InsertaCiudad
+        /////////////////////////InsertarCiudad
         public Boolean InsertarCiudad(entCiudad Ciu)
         {
             SqlCommand cmd = null;
@@ -115,7 +114,7 @@ namespace Capa_Datos
             return modificar;
         }
 
-        //deshabilitaCliente
+        //deshabilitaCiudad
         public Boolean DeshabilitarCiudad(entCiudad Ciu)
         {
             SqlCommand cmd = null;
@@ -126,7 +125,6 @@ namespace Capa_Datos
                 cmd = new SqlCommand("spDeshabilitarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CiudadID", Ciu.CiudadID);
-                //cmd.Parameters.AddWithValue("@estCiudad", Ciu.EstadoCiudad);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
