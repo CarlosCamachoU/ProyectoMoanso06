@@ -122,7 +122,7 @@
             this.label2.Location = new System.Drawing.Point(9, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 16);
+            this.label2.Size = new System.Drawing.Size(130, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tipo Entrenamiento";
             // 
@@ -226,10 +226,10 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 235);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 235);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(641, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(642, 185);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
