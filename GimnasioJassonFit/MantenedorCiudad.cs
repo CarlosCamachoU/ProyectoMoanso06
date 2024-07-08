@@ -19,6 +19,7 @@ namespace GimnasioJassonFit
             InitializeComponent();
             listarCiudad();
             txtCiudad.Enabled = false;
+            txtCiudadID.Enabled = false;
             
         }
         private void LimpiarVariables()
@@ -59,6 +60,7 @@ namespace GimnasioJassonFit
             try
             {
                 entCiudad ci = new entCiudad();
+                ci.CiudadID = int.Parse(txtCiudadID.Text.Trim());
                 ci.NombreCiudad = txtCiudad.Text.Trim();
                 ci.EstadoCiudad = cbEstadoCiu.Checked;
                 logCiudad.Instancia.ModificarCiudad(ci);
@@ -69,6 +71,7 @@ namespace GimnasioJassonFit
             }
             LimpiarVariables();
             txtCiudad.Enabled = false;
+            txtCiudadID.Enabled = false;
             listarCiudad();
         }
 
@@ -99,6 +102,13 @@ namespace GimnasioJassonFit
             btnRegistrar.Visible = true;
             LimpiarVariables();
             btnModificar.Visible = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            txtCiudad.Enabled = true;
+            btnModificar.Visible = true;
+            btnRegistrar.Visible = false;
         }
     }
 }

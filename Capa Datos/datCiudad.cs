@@ -95,8 +95,9 @@ namespace Capa_Datos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spModificarCiudad", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@CiudadID", Ciu.CiudadID);
                 cmd.Parameters.AddWithValue("@NombreCiudad", Ciu.NombreCiudad);
-                cmd.Parameters.AddWithValue("@estCliente", Ciu.EstadoCiudad);
+                cmd.Parameters.AddWithValue("@estCiudad", Ciu.EstadoCiudad);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
