@@ -28,14 +28,14 @@ namespace Capa_Datos
 
         #region metodos
         ////////////////////listado de Clientes
-        public List<entCliente> ListarCliente()
+       /* public List<entCliente> ListarCliente()
         {
             SqlCommand cmd = null;
             List<entCliente> lista = new List<entCliente>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaCliente", cn);
+                cmd = new SqlCommand("spListarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -45,11 +45,13 @@ namespace Capa_Datos
                     Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
                     Cli.NombreClie = dr["NombreClie"].ToString();
                     Cli.ApellidoClie = dr["ApellidoClie"].ToString();
+                    Cli.FechaNaClie = Convert.ToDateTime(dr["FechaNaClie"]);
                     Cli.GeneroClie = dr["GeneroClie"].ToString();
                     Cli.EdadClie = Convert.ToInt32(dr["EdadClie"]);
-                    Cli.FechaNaClie = Convert.ToDateTime(dr["FechaNaClie"]);
-                    Cli.TelefonoClie = Convert.ToInt32(dr["TelefonoClie"]);
+                    Cli.DNIClie = dr["DNIClie"].ToString();
+                    Cli.TelefonoClie = dr["TelefonoClie"].ToString();
                     Cli.EstadoClie = Convert.ToBoolean(dr["EstadoClie"]);
+                    Cli.DireccionClie = dr["DireccionClie"].ToString();
                     lista.Add(Cli);
                 }
             }
@@ -62,7 +64,7 @@ namespace Capa_Datos
                 cmd.Connection.Close();
             }
             return lista;
-        }
+        }*/
         #endregion metodos
     }
 }

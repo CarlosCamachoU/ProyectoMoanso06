@@ -17,7 +17,7 @@ namespace GimnasioJassonFit
         public dgvClientes()
         {
             InitializeComponent();
-            listarCliente();
+            //listarCliente();
         }
 
         private void btnBuscarCiudad_Click(object sender, EventArgs e)
@@ -53,10 +53,11 @@ namespace GimnasioJassonFit
         {
             this.Show();
         }
+        /*
         public void listarCliente()
         {
             dgvCliente.DataSource = logCliente.Instancia.ListarCliente();
-        }
+        }*/
 
     }
 }

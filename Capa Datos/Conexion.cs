@@ -19,7 +19,7 @@ namespace Capa_Datos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-MKORCPQ; Initial Catalog = BDGIMNASIOJS;" +//"User ID=sa;Password = 123";
+            cn.ConnectionString = "Data Source=DESKTOP-MKORCPQ; Initial Catalog = GIMNASIOJSBD;" +//"User ID=sa;Password = 123";
                                   "Integrated Security=true";
 
             return cn;

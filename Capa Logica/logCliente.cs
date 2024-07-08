@@ -26,10 +26,10 @@ namespace Capa_Logica
 
         //#region metodos
         ///listado
-
+        /*
         public List<entCliente> ListarCliente()
         {
             return datCliente.Instancia.ListarCliente();
-        }
+        }*/
     }
 }

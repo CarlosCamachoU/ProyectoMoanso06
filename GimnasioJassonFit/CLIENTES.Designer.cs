@@ -251,7 +251,7 @@
             // dgvCliente
             // 
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(15, 271);
+            this.dgvCliente.Location = new System.Drawing.Point(22, 272);
             this.dgvCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersWidth = 51;
