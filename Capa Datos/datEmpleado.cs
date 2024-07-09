@@ -107,6 +107,7 @@ namespace Capa_Datos
                 cmd.Parameters.AddWithValue("@TipoEmpleadoID", BuscarTipoEmpleado(Tipoempleado));
                 cmd.Parameters.AddWithValue("@NombreEmpl", Emp.NombreEmpl);
                 cmd.Parameters.AddWithValue("@DNIEmpl", Emp.DNIEmpl);
+                cmd.Parameters.AddWithValue("@CorreoEmpl", Emp.CorreoEmpl);
                 cmd.Parameters.AddWithValue("@TelefonoEmpl", Emp.TelefonoEmpl);
                 cmd.Parameters.AddWithValue("@EstadoEmpl", Emp.EstadoEmpl);
                 cn.Open();
@@ -171,7 +172,7 @@ namespace Capa_Datos
                     Emp.EmpleadoID = Convert.ToInt32(dr["EmpleadoID"]);
                     TP.NombreTipoEmpl = dr["NombreTipoEmpl"].ToString();
                     Emp.NombreEmpl = dr["NombreEmpl"].ToString();
-                    Emp.DNIEmpl = dr["DNIClie"].ToString();
+                    Emp.DNIEmpl = dr["DNIEmpl"].ToString();
                     Emp.CorreoEmpl = dr["CorreoEmpl"].ToString();
                     Emp.TelefonoEmpl = dr["TelefonoEmpl"].ToString();
                     Emp.EstadoEmpl = Convert.ToBoolean(dr["EstadoEmpl"]);

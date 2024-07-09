@@ -9,6 +9,7 @@ namespace Capa_Entidad
     public class entEmpleado
     {
         public int EmpleadoID { get; set; }
+        public int TipoEmpleado { get; set; }
         public string NombreTipoEmpl { get; set; }
         public string NombreEmpl { get; set; }
         public string DNIEmpl { get; set; }

@@ -36,7 +36,7 @@ namespace Capa_Logica
         }
         public Boolean ModificarEmpleado(entEmpleado Emp, entTipoEmpleado Tp)
         {
-            return datEmpleado.Instancia.InsertarEmpleado(Emp, Tp);
+            return datEmpleado.Instancia.ModificarEmpleado(Emp, Tp);
         }
         public Boolean DeshabilitarEmpleado(entEmpleado Emp)
         {

@@ -116,13 +116,14 @@ namespace GimnasioJassonFit
             {
                 entEmpleado Emp = new entEmpleado();
                 entTipoEmpleado Tp = new entTipoEmpleado();
+                Emp.EmpleadoID = Int32.Parse(txtIDEmpleado.Text.ToString());
                 Tp.NombreTipoEmpl = cbTipoEmpleado.SelectedItem.ToString();
                 Emp.NombreEmpl = txtNombreE.Text.Trim();
                 Emp.DNIEmpl = txtDNIEmp.Text.Trim();
                 Emp.CorreoEmpl = txtCorreoE.Text.Trim();
                 Emp.TelefonoEmpl = txtTelefonoE.Text.Trim();
                 Emp.EstadoEmpl = cbxEstadoEmp.Checked;
-                logEmpleado.Instancia.InsertarEmpleado(Emp, Tp);
+                logEmpleado.Instancia.ModificarEmpleado(Emp, Tp);
 
             }
             catch (Exception ex)
@@ -178,12 +179,12 @@ namespace GimnasioJassonFit
         {
             DataGridViewRow filaActual = dgvEmpleado.Rows[e.RowIndex]; //
             txtIDEmpleado.Text = filaActual.Cells[0].Value.ToString();
-            cbTipoEmpleado.Text = filaActual.Cells[1].Value.ToString();
-            txtDNIEmp.Text = filaActual.Cells[2].Value.ToString();
-            txtCorreoE.Text = filaActual.Cells[3].Value.ToString();
-            txtTelefonoE.Text = filaActual.Cells[4].Value.ToString();
-            cbxEstadoEmp.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
-
+            cbTipoEmpleado.Text = filaActual.Cells[2].Value.ToString();
+            txtNombreE.Text = filaActual.Cells[3].Value.ToString();
+            txtDNIEmp.Text = filaActual.Cells[4].Value.ToString();
+            txtCorreoE.Text = filaActual.Cells[5].Value.ToString();
+            txtTelefonoE.Text = filaActual.Cells[6].Value.ToString();
+            cbxEstadoEmp.Checked = Convert.ToBoolean(filaActual.Cells[7].Value);
         }
     }
 }
