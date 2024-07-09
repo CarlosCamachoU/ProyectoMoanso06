@@ -195,7 +195,7 @@ namespace Capa_Datos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spBuscarTipoEmpleadoID", cn);
+                cmd = new SqlCommand("spBuscarIDTipoEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@NombreTipoEmpl", tipoempleado.NombreTipoEmpl);
                 cn.Open();
