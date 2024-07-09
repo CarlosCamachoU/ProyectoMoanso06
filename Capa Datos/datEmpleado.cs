@@ -45,7 +45,7 @@ namespace Capa_Datos
                     Emp.EmpleadoID = Convert.ToInt32(dr["EmpleadoID"]);
                     TP.NombreTipoEmpl = dr["NombreTipoEmpl"].ToString();
                     Emp.NombreEmpl = dr["NombreEmpl"].ToString();
-                    Emp.DNIEmpl = dr["DNIClie"].ToString();
+                    Emp.DNIEmpl = dr["DNIEmpl"].ToString();
                     Emp.CorreoEmpl = dr["CorreoEmpl"].ToString();
                     Emp.TelefonoEmpl = dr["TelefonoEmpl"].ToString();
                     Emp.EstadoEmpl = Convert.ToBoolean(dr["EstadoEmpl"]);
