@@ -31,6 +31,11 @@ namespace Capa_Logica
         {
             return datCiudad.Instancia.ListarCiudad();
         }
+        public List<entCiudad> ListarCiudad1()
+        {
+            return datCiudad.Instancia.ListarCiudad1();
+        }
+
         public void InsertarCiudad(entCiudad Ciu)
         {
             datCiudad.Instancia.InsertarCiudad(Ciu);

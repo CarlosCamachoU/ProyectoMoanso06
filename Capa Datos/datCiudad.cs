@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Sql;
 
+
 namespace Capa_Datos
 {
     public class datCiudad
@@ -44,6 +45,34 @@ namespace Capa_Datos
                     Ciu.CiudadID = Convert.ToInt32(dr["CiudadID"]);
                     Ciu.NombreCiudad = dr["NombreCiudad"].ToString();
                     Ciu.EstadoCiudad = Convert.ToBoolean(dr["EstadoCiudad"]);
+                    lista.Add(Ciu);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
+        public List<entCiudad> ListarCiudad1()
+        {
+            SqlCommand cmd = null;
+            List<entCiudad> lista = new List<entCiudad>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarCiudad1", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entCiudad Ciu = new entCiudad();
+                    Ciu.NombreCiudad = dr["NombreCiudad"].ToString();
                     lista.Add(Ciu);
                 }
             }
@@ -139,6 +168,7 @@ namespace Capa_Datos
             finally { cmd.Connection.Close(); }
             return deshabilitar;
         }
+
 
 
         #endregion metodos

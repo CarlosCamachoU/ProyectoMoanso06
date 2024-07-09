@@ -26,10 +26,27 @@ namespace Capa_Logica
 
         //#region metodos
         ///listado
-        /*
+        
         public List<entCliente> ListarCliente()
         {
             return datCliente.Instancia.ListarCliente();
-        }*/
+        }
+        public Boolean InsertarCliente(entCliente Cl, entCiudad ci, entProfesion pr)
+        {
+            return datCliente.Instancia.InsertarCliente(Cl, ci, pr);
+        }
+        public Boolean ModificarCliente(entCliente Cl, entCiudad ci, entProfesion pr)
+        {
+            return datCliente.Instancia.ModificarCliente(Cl, ci, pr);
+        }
+        public Boolean DeshabilitarCliente(entCliente Cl)
+        {
+            return datCliente.Instancia.DeshabilitarCliente(Cl);
+        }
+        public List<entCliente> BuscarCliente(entCliente Cl)
+        {
+            return datCliente.Instancia.BuscarCliente(Cl);
+        }
+
     }
 }

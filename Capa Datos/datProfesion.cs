@@ -55,6 +55,34 @@ namespace Capa_Datos
             }
             return lista;
         }
+        public List<entProfesion> ListarProfesion1()
+        {
+            SqlCommand cmd = null;
+            List<entProfesion> lista = new List<entProfesion>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarProfesion1", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entProfesion Pr = new entProfesion();
+                    Pr.NombreProfe = dr["NombreProfe"].ToString();
+                    lista.Add(Pr);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
 
         public Boolean InsertarProfesion(entProfesion Pr)
         {

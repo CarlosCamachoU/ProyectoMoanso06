@@ -31,6 +31,10 @@ namespace Capa_Logica
         {
             return datProfesion.Instancia.ListarProfesion();
         }
+        public List<entProfesion> ListarProfesion1()
+        {
+            return datProfesion.Instancia.ListarProfesion1();
+        }
         public void InsertarProfesion(entProfesion Pr)
         {
             datProfesion.Instancia.InsertarProfesion(Pr);
