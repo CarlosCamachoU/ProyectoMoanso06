@@ -166,6 +166,38 @@ namespace Capa_Datos
             finally { cmd.Connection.Close(); }
             return eliminar;
         }
+
+        public List<entTipoEmpleado> BuscarTipoEmpleado(entTipoEmpleado Tp)
+        {
+            SqlCommand cmd = null;
+            List<entTipoEmpleado> lista = new List<entTipoEmpleado>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarTipoEmpleado", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@NombreTipoEmpl", Tp.NombreTipoEmpl);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entTipoEmpleado Tpi = new entTipoEmpleado();
+                    Tpi.TipoEmpleadoID = Convert.ToInt32(dr["TipoEmpleadoID"]);
+                    Tpi.NombreTipoEmpl = dr["NombreTipoEmpl"].ToString();
+                    Tpi.Contrato = dr["Contrato"].ToString();
+                    Tpi.Descripcion = dr["Descripcion"].ToString();
+                    lista.Add(Tpi);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return lista;
+        }
+
         #endregion metodos
 
     }

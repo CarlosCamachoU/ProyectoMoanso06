@@ -26,6 +26,7 @@ namespace GimnasioJassonFit
 
         private void LimpiarVariables()
         {
+            txtIDTP.Text = "";
             txtPuesto.Text = "";
             txtContrato.Text = "";
             txtDescripcion.Text = "";
@@ -47,7 +48,7 @@ namespace GimnasioJassonFit
             txtDescripcion.Enabled = true;
             btnRegistrar.Visible = true;
             LimpiarVariables();
-            btnModificar.Visible = false;
+           
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace GimnasioJassonFit
             txtPuesto.Enabled = true;
             txtContrato.Enabled = true;
             txtDescripcion.Enabled = true;
-            btnModificar.Visible = true;
+           
             btnRegistrar.Visible = false;
         }
 
@@ -137,6 +138,18 @@ namespace GimnasioJassonFit
             txtPuesto.Text = filaActual.Cells[1].Value.ToString();
             txtContrato.Text = filaActual.Cells[2].Value.ToString();
             txtDescripcion.Text = filaActual.Cells[3].Value.ToString();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            entTipoEmpleado Tp = new entTipoEmpleado();
+            Tp.NombreTipoEmpl = txtPuesto.Text.ToString();
+            dgvTipoEmpleado.DataSource = logTipoEmpleado.Instancia.BuscarTipoEmpleado(Tp);
+        }
+
+        private void btnRegresarD_Click(object sender, EventArgs e)
+        {
+            dgvTipoEmpleado.DataSource = logTipoEmpleado.Instancia.ListarTipoEmpleado();
         }
     }
 }

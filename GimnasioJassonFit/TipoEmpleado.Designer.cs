@@ -47,6 +47,7 @@
             this.txtContrato = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnRegresarD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoEmpleado)).BeginInit();
             this.SuspendLayout();
@@ -115,11 +116,11 @@
             // dgvTipoEmpleado
             // 
             this.dgvTipoEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTipoEmpleado.Location = new System.Drawing.Point(61, 255);
+            this.dgvTipoEmpleado.Location = new System.Drawing.Point(31, 255);
             this.dgvTipoEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTipoEmpleado.Name = "dgvTipoEmpleado";
             this.dgvTipoEmpleado.RowHeadersWidth = 51;
-            this.dgvTipoEmpleado.Size = new System.Drawing.Size(554, 185);
+            this.dgvTipoEmpleado.Size = new System.Drawing.Size(584, 185);
             this.dgvTipoEmpleado.TabIndex = 7;
             this.dgvTipoEmpleado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTipoEmpleado_CellDoubleClick);
             // 
@@ -176,6 +177,7 @@
             this.btnBuscar.TabIndex = 14;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label4
             // 
@@ -235,6 +237,17 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // btnRegresarD
+            // 
+            this.btnRegresarD.Location = new System.Drawing.Point(866, 317);
+            this.btnRegresarD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresarD.Name = "btnRegresarD";
+            this.btnRegresarD.Size = new System.Drawing.Size(127, 54);
+            this.btnRegresarD.TabIndex = 22;
+            this.btnRegresarD.Text = "REGRESAR DATOS";
+            this.btnRegresarD.UseVisualStyleBackColor = true;
+            this.btnRegresarD.Click += new System.EventHandler(this.btnRegresarD_Click);
+            // 
             // TipoEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -242,6 +255,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1063, 470);
+            this.Controls.Add(this.btnRegresarD);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtContrato);
@@ -291,5 +305,6 @@
         private System.Windows.Forms.TextBox txtContrato;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnRegresarD;
     }
 }

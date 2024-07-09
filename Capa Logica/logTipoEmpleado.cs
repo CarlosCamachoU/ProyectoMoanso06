@@ -47,6 +47,10 @@ namespace Capa_Logica
         {
             datTipoEmpleado.Instancia.EliminarTipoEmpleado(Pr);
         }
+        public List<entTipoEmpleado> BuscarTipoEmpleado(entTipoEmpleado Pr)
+        {
+            return datTipoEmpleado.Instancia.BuscarTipoEmpleado(Pr);
+        }
         #endregion metodos
     }
 }
