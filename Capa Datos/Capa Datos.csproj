@@ -48,6 +48,7 @@
     <Compile Include="datCiudad.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datProfesion.cs" />
+    <Compile Include="datTipoEmpleado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

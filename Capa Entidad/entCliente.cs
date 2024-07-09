@@ -11,8 +11,7 @@ namespace Capa_Entidad
         public string NombreCiudad { get; set; }
         public string NombreProfesion { get; set; }
         public int ClienteID { get; set; }
-        //public entProfesion Profesion { get; set; }
-        //public entCiudad Ciudad { get; set; }
+
         public string NombreClie { get; set; }
         public string ApellidoClie { get; set; }
         public DateTime FechaNaClie { get; set; }

@@ -71,7 +71,7 @@ namespace GimnasioJassonFit
                 entProfesion Pr = new entProfesion();
                 Pr.ProfesionID = int.Parse(txtIDProfesion.Text.ToString());
                 Pr.NombreProfe = txtProfesion.Text.ToString();
-                Pr.DescripcionProfe = txtProfesion.Text.ToString();
+                Pr.DescripcionProfe = txtDescripcion.Text.ToString();
                 logProfesion.Instancia.ModificarProfesion(Pr);
             }
             catch (Exception ex)

@@ -24,6 +24,7 @@ namespace GimnasioJassonFit
             txtNombreCl.Enabled = false;
             txtApellidosCl.Enabled = false;
             txtEdad.Enabled = false;
+            txtGeneroCl.Enabled = false;
             txtDNICl.Enabled = false;
             txtTelefonoCl.Enabled = false;
             txtDireccion.Enabled = false;
@@ -31,8 +32,16 @@ namespace GimnasioJassonFit
         }
         private void LimpiarVariables()
         {
-            //txtNombreCl.Text = "";
-            gbDatosCl.Text = "";
+            
+            txtNombreCl.Text = "";
+            txtApellidosCl.Text = "";
+            txtEdad.Text = "";
+            txtDNICl.Text = "";
+            txtTelefonoCl.Text = "";
+            txtGeneroCl.Text = "";
+            txtDireccion.Text = "";
+            cbCiudad.Text = "";
+            cbProfesion.Text = "";
 
         }
         public void listarCliente()
@@ -98,6 +107,7 @@ namespace GimnasioJassonFit
             txtApellidosCl.Enabled = true;
             txtEdad.Enabled = true;
             txtDNICl.Enabled = true;
+            txtGeneroCl.Enabled = true;
             txtTelefonoCl.Enabled = true;
             txtDireccion.Enabled = true;
             LimpiarVariables();
@@ -139,6 +149,7 @@ namespace GimnasioJassonFit
             txtNombreCl.Enabled = false;
             txtApellidosCl.Enabled = false;
             txtEdad.Enabled = false;
+            txtGeneroCl.Enabled = false;
             txtDNICl.Enabled = false;
             txtTelefonoCl.Enabled = false;
             txtDireccion.Enabled = false;
@@ -158,6 +169,7 @@ namespace GimnasioJassonFit
                 Cl.ApellidoClie = txtApellidosCl.Text.Trim();
                 Cl.FechaNaClie = dtPickerFechaNaCl.Value;
                 Cl.EdadClie = int.Parse(txtEdad.Text.Trim());
+                Cl.GeneroClie = txtGeneroCl.Text.Trim();
                 Cl.DNIClie = txtDNICl.Text.Trim();
                 Cl.TelefonoClie = txtTelefonoCl.Text.Trim();
                 Cl.EstadoClie = cbEstadoCl.Checked;
@@ -174,6 +186,7 @@ namespace GimnasioJassonFit
             txtEdad.Enabled = false;
             txtDNICl.Enabled = false;
             txtTelefonoCl.Enabled = false;
+            txtGeneroCl.Enabled = false;
             txtDireccion.Enabled = false;
             txtClienteID.Enabled = false;
             listarCliente();
@@ -199,6 +212,7 @@ namespace GimnasioJassonFit
             txtApellidosCl.Enabled = false;
             txtEdad.Enabled = false;
             txtDNICl.Enabled = false;
+            txtGeneroCl.Enabled = false;
             txtTelefonoCl.Enabled = false;
             txtDireccion.Enabled = false;
             listarCliente();

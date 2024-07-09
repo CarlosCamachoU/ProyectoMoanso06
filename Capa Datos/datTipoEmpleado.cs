@@ -9,66 +9,41 @@ using System.Threading.Tasks;
 
 namespace Capa_Datos
 {
-    public class datProfesion
+    public class datTipoEmpleado
     {
         #region sigleton
 
-        private static readonly datProfesion _instancia = new datProfesion();
-        public static datProfesion Instancia
+        private static readonly datTipoEmpleado _instancia = new datTipoEmpleado();
+
+        public static datTipoEmpleado Instancia
         {
             get
             {
-                return datProfesion._instancia;
+                return datTipoEmpleado._instancia;
             }
         }
         #endregion singleton
+
         #region metodos
-        public List<entProfesion> ListarProfesion()
+        public List<entTipoEmpleado> ListarTipoEmpleado()
         {
             SqlCommand cmd = null;
-            List<entProfesion> lista = new List<entProfesion>();
+            List<entTipoEmpleado> lista = new List<entTipoEmpleado>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarProfesion", cn);
+                cmd = new SqlCommand("spListarTipoEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entProfesion Pr = new entProfesion();
-                    Pr.ProfesionID = Convert.ToInt32(dr["ProfesionID"]);
-                    Pr.NombreProfe = dr["NombreProfe"].ToString();
-                    Pr.DescripcionProfe = dr["DescripcionProfe"].ToString();
-                    lista.Add(Pr);
-                }
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                cmd.Connection.Close();
-            }
-            return lista;
-        }
-        public List<entProfesion> ListarProfesion1()
-        {
-            SqlCommand cmd = null;
-            List<entProfesion> lista = new List<entProfesion>();
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarProfesion1", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cn.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    entProfesion Pr = new entProfesion();
-                    Pr.NombreProfe = dr["NombreProfe"].ToString();
-                    lista.Add(Pr);
+                    entTipoEmpleado Tp = new entTipoEmpleado();
+                    Tp.TipoEmpleadoID = Convert.ToInt32(dr["TipoEmpleadoID"]);
+                    Tp.NombreTipoEmpl = dr["NombreTipoEmpl"].ToString();
+                    Tp.Contrato = dr["Contrato"].ToString();
+                    Tp.Descripcion = dr["Descripcion"].ToString();
+                    lista.Add(Tp);
                 }
             }
             catch (Exception e)
@@ -82,17 +57,47 @@ namespace Capa_Datos
             return lista;
         }
 
-        public Boolean InsertarProfesion(entProfesion Pr)
+        public List<entTipoEmpleado> ListarTipoEmpleado1()
+        {
+            SqlCommand cmd = null;
+            List<entTipoEmpleado> lista = new List<entTipoEmpleado>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarTipoEmpleado1", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entTipoEmpleado Tp = new entTipoEmpleado();
+                    Tp.NombreTipoEmpl = dr["NombreTipoEmpl"].ToString();
+                    lista.Add(Tp);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
+
+        public Boolean InsertarTipoEmpleado(entTipoEmpleado Pt)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarProfesion", cn);
+                cmd = new SqlCommand("spInsertarTipoEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@NombreProfe", Pr.NombreProfe);
-                cmd.Parameters.AddWithValue("@DescripcionProfe", Pr.DescripcionProfe);
+                cmd.Parameters.AddWithValue("@NombreTipoEmpl", Pt.NombreTipoEmpl);
+                cmd.Parameters.AddWithValue("@Contrato", Pt.Contrato);
+                cmd.Parameters.AddWithValue("@Descripcion", Pt.Descripcion);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -107,19 +112,19 @@ namespace Capa_Datos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
-
-        public Boolean ModificarProfesion(entProfesion Pr)
+        public Boolean ModificarTipoEmpleado(entTipoEmpleado Pt)
         {
             SqlCommand cmd = null;
             Boolean modificar = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spModificarProfesion", cn);
+                cmd = new SqlCommand("spModificarTipoEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProfesionID", Pr.ProfesionID);
-                cmd.Parameters.AddWithValue("@NombreProfe", Pr.NombreProfe);
-                cmd.Parameters.AddWithValue("@DescripcionProfe", Pr.DescripcionProfe);
+                cmd.Parameters.AddWithValue("@TipoEmpleadoID", Pt.TipoEmpleadoID);
+                cmd.Parameters.AddWithValue("@NombreTipoEmpl", Pt.NombreTipoEmpl);
+                cmd.Parameters.AddWithValue("@Contrato", Pt.Contrato);
+                cmd.Parameters.AddWithValue("@Descripcion", Pt.Descripcion);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -137,16 +142,16 @@ namespace Capa_Datos
             return modificar;
         }
 
-        public Boolean EliminarProfesion(entProfesion Pr)
+        public Boolean EliminarTipoEmpleado(entTipoEmpleado Pt)
         {
             SqlCommand cmd = null;
             Boolean eliminar = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEliminarProfesion", cn);
+                cmd = new SqlCommand("spEliminarTipoEmpleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProfesionID", Pr.ProfesionID);
+                cmd.Parameters.AddWithValue("@TipoEmpleadoID", Pt.TipoEmpleadoID);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -161,8 +166,6 @@ namespace Capa_Datos
             finally { cmd.Connection.Close(); }
             return eliminar;
         }
-        
-
         #endregion metodos
 
     }
