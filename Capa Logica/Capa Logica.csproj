@@ -44,7 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logCiudad.cs" />
     <Compile Include="logCliente.cs" />
+    <Compile Include="logEmpleado.cs" />
+    <Compile Include="logProfesion.cs" />
+    <Compile Include="logTipoEmpleado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

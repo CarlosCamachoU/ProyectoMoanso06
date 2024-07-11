@@ -55,6 +55,11 @@ namespace GimnasioJassonFit
         {
             this.Show();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

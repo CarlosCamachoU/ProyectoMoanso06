@@ -8,13 +8,18 @@ namespace Capa_Entidad
 {
     public class entCliente
     {
+        public string NombreCiudad { get; set; }
+        public string NombreProfesion { get; set; }
         public int ClienteID { get; set; }
+
         public string NombreClie { get; set; }
         public string ApellidoClie { get; set; }
-        public string GeneroClie { get; set; }
-        public int EdadClie { get; set; }
         public DateTime FechaNaClie { get; set; }
-        public int TelefonoClie { get; set; }
+        public int EdadClie { get; set; }
+        public string GeneroClie { get; set; }
+        public  string DNIClie { get; set; }
+        public string TelefonoClie { get; set; }
         public Boolean EstadoClie { get; set; }
+        public string DireccionClie { get; set; }
     }
 }
